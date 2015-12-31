@@ -6,7 +6,7 @@
   <groupId>pentaho</groupId>
   <artifactId>mondrian</artifactId>
   <packaging>jar</packaging>
-  <version>4.0-SNAPSHOT</version>
+  <version>4.3.0.7.1-SNAPSHOT</version>
 
   <!-- More project information. -->
   <name>mondrian</name>
@@ -441,7 +441,7 @@
             </goals>
             <configuration>
               <files>
-                <file>mondrian.properties</file>
+                <!--<file>mondrian.properties</file>-->
                 <file>build.properties</file>
               </files>
             </configuration>
