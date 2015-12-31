@@ -1148,7 +1148,7 @@ public class JdbcSchema {
         try {
             conn = getDataSource().getConnection();
             final DatabaseMetaData databaseMetaData = conn.getMetaData();
-            List<String> tableTypes = Arrays.asList("TABLE", "VIEW");
+            List<String> tableTypes = Arrays.asList("TABLE", "VIEW", "BASE TABLE");//添加对presto的支持
             if (databaseMetaData.getDatabaseProductName().toUpperCase().indexOf(
                     "VERTICA") >= 0)
             {

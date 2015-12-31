@@ -1113,7 +1113,7 @@ must be run under JDK 1.7." />
     </javac>
   </target>
 
-  <target name="jar" depends="version,checkJdkVersion,compile,compile.tests">
+  <target name="jar" depends="version,compile,compile.tests">
     <mkdir dir="${lib.dir}" />
     <jar
         destfile="${jar.file}"
