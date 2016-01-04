@@ -1009,12 +1009,18 @@ public class RolapSchema extends OlapElementBase implements Schema {
             String sql)
         {
             java.sql.Connection connection = null;
-            PreparedStatement pstmt = null;
+            java.sql.Statement ps = null;
+            ResultSet rs = null;
             try {
                 connection =
                     jdbcSchema.getDataSource().getConnection();
-                pstmt = connection.prepareStatement(sql);
-                final ResultSetMetaData metaData = pstmt.getMetaData();
+                //pstmt = connection.prepareStatement(sql);
+                ps = connection.createStatement();
+
+                rs = ps.executeQuery(sql+" limit 1");
+
+
+                final ResultSetMetaData metaData =  rs.getMetaData();
                 final int columnCount = metaData.getColumnCount();
                 final List<ColumnInfo> columnInfoList =
                     new ArrayList<ColumnInfo>();
@@ -1043,8 +1049,11 @@ public class RolapSchema extends OlapElementBase implements Schema {
                     columnInfoList.add(
                         new ColumnInfo(columnName, datatype, columnSize));
                 }
-                pstmt.close();
-                pstmt = null;
+
+                rs.close();
+                rs = null;
+                ps.close();
+                ps=null;
                 connection.close();
                 connection = null;
                 return columnInfoList;
@@ -1055,7 +1064,7 @@ public class RolapSchema extends OlapElementBase implements Schema {
                 return null;
             } finally {
                 //noinspection ThrowableResultOfMethodCallIgnored
-                Util.close(null, pstmt, connection);
+                Util.close(rs,ps , connection);
             }
         }
     }
