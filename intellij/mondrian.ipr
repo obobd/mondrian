@@ -36,9 +36,9 @@
   <component name="CompilerConfiguration">
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
-      <file url="file://$PROJECT_DIR$/../../olap4j/src/org/olap4j/sample/SpringSample.java" />
-      <file url="file://$PROJECT_DIR$/../../olap4j/src/mondrian/olap4j/FactoryJdbc3Impl.java" />
-      <file url="file://$PROJECT_DIR$/../../olap4j/src/org/olap4j/driver/xmla/FactoryJdbc3Impl.java" />
+      <file url="file://$USER_HOME$/olap4j/src/org/olap4j/sample/SpringSample.java" />
+      <file url="file://$USER_HOME$/olap4j/src/mondrian/olap4j/FactoryJdbc3Impl.java" />
+      <file url="file://$USER_HOME$/olap4j/src/org/olap4j/driver/xmla/FactoryJdbc3Impl.java" />
       <file url="file://$PROJECT_DIR$/../src/main/mondrian/olap4j/FactoryJdbc3Impl.java" />
       <file url="file://$PROJECT_DIR$/../src/main/mondrian/olap4j/FactoryJdbc4Impl.java" />
     </excludeFromCompile>
@@ -63,9 +63,7 @@
       </profile>
     </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DependenciesAnalyzeManager">
     <option name="myForwardDirection" value="false" />
   </component>
@@ -83,7 +81,9 @@
     <option name="ADDITIONAL_OPTIONS_STRING" value="" />
     <option name="MAXIMUM_HEAP_SIZE" value="128" />
   </component>
-  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
+  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
@@ -103,18 +103,6 @@
     </autodetection-disabled>
   </component>
   <component name="IdProvider" IDEtalkID="56AEB67D7DB6A080C3C46E677522A8E5" />
-  <component name="InspectionProjectProfileManager">
-    <profiles>
-      <profile version="1.0" is_locked="false">
-        <option name="myName" value="Project Default" />
-        <option name="myLocal" value="false" />
-        <inspection_tool class="UNCHECKED_WARNING" enabled="false" level="WARNING" enabled_by_default="false" />
-      </profile>
-    </profiles>
-    <option name="PROJECT_PROFILE" value="Project Default" />
-    <option name="USE_PROJECT_PROFILE" value="true" />
-    <version value="1.0" />
-  </component>
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
     <option name="OPTION_SCOPE" value="protected" />
@@ -300,14 +288,13 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mondrian.iml" filepath="$PROJECT_DIR$/mondrian.iml" />
       <module fileurl="file://$PROJECT_DIR$/mondrianTest.iml" filepath="$PROJECT_DIR$/mondrianTest.iml" />
     </modules>
   </component>
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
   <component name="ResourceManagerContainer">
     <option name="myResourceBundles">
       <value>
@@ -336,11 +323,11 @@
   </component>
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/../../mondrianpro" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/../../olap4j" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/../../pentaho-aggdesigner/pentaho-aggdesigner-core" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/../../pentaho-aggdesigner/trunk/pentaho-aggdesigner/pentaho-aggdesigner-core" vcs="svn" />
-    <mapping directory="$PROJECT_DIR$/../../pentaho-aggdesigner/trunk/pentaho-aggdesigner/pentaho-aggdesigner-ui" vcs="svn" />
+    <mapping directory="$USER_HOME$/mondrianpro" vcs="svn" />
+    <mapping directory="$USER_HOME$/olap4j" vcs="svn" />
+    <mapping directory="$USER_HOME$/pentaho-aggdesigner/pentaho-aggdesigner-core" vcs="svn" />
+    <mapping directory="$USER_HOME$/pentaho-aggdesigner/trunk/pentaho-aggdesigner/pentaho-aggdesigner-core" vcs="svn" />
+    <mapping directory="$USER_HOME$/pentaho-aggdesigner/trunk/pentaho-aggdesigner/pentaho-aggdesigner-ui" vcs="svn" />
   </component>
   <component name="WebServicesPlugin" addRequiredLibraries="true" />
   <component name="com.intellij.jsf.UserDefinedFacesConfigs">
@@ -392,7 +379,7 @@
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="file://$PROJECT_DIR$/../../farrago/src" />
+        <root url="file://$USER_HOME$/farrago/src" />
       </SOURCES>
     </library>
     <library name="jdbcDrivers">
@@ -441,7 +428,7 @@
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="file://$PROJECT_DIR$/../../olap4j/testsrc" />
+        <root url="file://$USER_HOME$/olap4j/testsrc" />
       </SOURCES>
     </library>
     <library name="olap4j-xmla">
@@ -457,7 +444,7 @@
       </CLASSES>
       <JAVADOC />
       <SOURCES>
-        <root url="file://$PROJECT_DIR$/../../olap4j-xmlaserver/src/main/java" />
+        <root url="file://$USER_HOME$/olap4j-xmlaserver/src/main/java" />
       </SOURCES>
     </library>
     <library name="xmlunit">
@@ -469,4 +456,3 @@
     </library>
   </component>
 </project>
-

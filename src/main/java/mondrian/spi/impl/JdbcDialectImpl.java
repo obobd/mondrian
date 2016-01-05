@@ -1406,19 +1406,19 @@ public class JdbcDialectImpl implements Dialect {
             }
 
             // Let's try using version().
-            statement = connection.createStatement();
-            resultSet = statement.executeQuery("select version()");
-            if (resultSet.next()) {
-                String version = resultSet.getString(1);
-                LOGGER.debug("Version=" + version);
-                if (version != null) {
-                    if (version.toLowerCase().contains(dbProduct)) {
-                        LOGGER.info(
-                            "Using " + databaseProduct.name() + " dialect");
-                        return true;
-                    }
-                }
-            }
+//            statement = connection.createStatement();
+//            resultSet = statement.executeQuery("select version()");
+//            if (resultSet.next()) {
+//                String version = resultSet.getString(1);
+//                LOGGER.debug("Version=" + version);
+//                if (version != null) {
+//                    if (version.toLowerCase().contains(dbProduct)) {
+//                        LOGGER.info(
+//                            "Using " + databaseProduct.name() + " dialect");
+//                        return true;
+//                    }
+//                }
+//            }
             LOGGER.debug("NOT Using " + databaseProduct.name() + " dialect");
             return false;
         } catch (SQLException e) {
