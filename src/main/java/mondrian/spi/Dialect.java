@@ -946,6 +946,7 @@ public interface Dialect {
         GREENPLUM,
         HIVE,
         HSQLDB,
+        PRESTO,
         IMPALA,
         INFORMIX,
         INFOBRIGHT,
